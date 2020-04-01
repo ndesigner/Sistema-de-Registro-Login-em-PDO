@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap');
+
+input:focus, select:focus, button:focus { outline: none; }
+
+body {
+    background-color: #736F4E;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+body .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body .container .logo {
+    width: 147px;
+    height: 127px;
+    background-image: url("../images/logomarca.png");
+    background-position: center;
+}
+
+body .container .box {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border: 1px solid #252525;
+}
+
+body .container .box form {
+    margin: 10px;
+    height: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body .container .box form input[type=email],
+body .container .box form input[type=password],
+body .container .box form input[type=text] {
+    margin: 5px 0px 0px 5px;
+    padding: 8px 25px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #75604B;
+    border-radius: 5px;
+    color: #999;
+}
+
+body .container .box form input[type=email].error,
+body .container .box form input[type=password].error,
+body .container .box form input[type=text].error { border: 1px solid red; }
+
+body .container .box form button.btn-success { margin-top: 10px; }
+body .container .box form button.btn-primary { margin-top: 5px; }
+
+body .container .box form i.fa-user { position: absolute; margin-top: -53px; margin-left: -92px; font-size: 14px; color: #888; }
+body .container .box form i.fa-key { position: absolute; margin-top: -14px; margin-left: -92px; font-size: 14px; color: #888; }
+
+a.register { color: #1e1e1e; text-decoration: none; margin-top: 10px; font-weight: 600; }
+
+button.btn {
+    padding: 10px 15px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+button.btn-success {
+    background-color: #4caf50;
+    border: 1px solid #388e3c;
+    box-shadow: inset 0px 0px 15px #81c784;
+    color: white;
+}
+
+button.btn-success:hover {
+    background-color: #388e3c;
+    cursor: pointer;
+}
+
+button.btn-primary {
+    background-color: #2196f3;
+    border: 1px solid #1976d2;
+    box-shadow: inset 0px 0px 15px #64b5f6;
+    color: white;
+}
+
+button.btn-primary:hover {
+    background-color: #1976d2;
+    cursor: pointer;
+}
+
